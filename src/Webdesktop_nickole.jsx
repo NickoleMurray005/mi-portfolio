@@ -679,7 +679,7 @@ function ContactApp() {
     e.preventDefault();
     setStatus("Enviando...");
     const data = new FormData(e.target);
-    const response = await fetch("https://formspree.io/f/mqakvjnd", {
+    const response = await fetch("https://formspree.io/f/xgodepje", {
       method: "POST", body: data, headers: { 'Accept': 'application/json' }
     });
     if (response.ok) { setStatus("✅ ¡Mensaje enviado!"); e.target.reset(); }
